@@ -1,0 +1,10 @@
+{
+    "name": "GetMayoDataPt1",
+    "version": "1.0",
+    "description": "navigates through Mayo Clinic and gets data on all illnesses and symptoms",
+    "permissions":["activeTab"],
+    "content_scripts":[{
+        "matches": ["http://www.mayoclinic.org"],
+        "js": ["contentScript.js"]
+    }]
+}

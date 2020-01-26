@@ -1,0 +1,12 @@
+{
+    "name": "GetMayoDataPt2",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "navigates through Mayo Clinic and gets data on all illnesses and symptoms",
+    "permissions":["activeTab"],
+    "content_scripts":[{
+        "matches": ["https://www.mayoclinic.org/diseases-conditions/*"],
+        "excludes_matches":["https://www.mayoclinic.org/diseases-conditions/index*"],
+        "js": ["contentScript.js"]
+    }]
+}
