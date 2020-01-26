@@ -11,7 +11,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, results.class)); //Must be fixed
+                startActivity(new Intent(MainActivity.this, results.class), savedInstanceState); //Must be fixed
             }
         });
     }}
