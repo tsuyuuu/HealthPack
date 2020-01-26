@@ -91,4 +91,5 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="your_symptoms_closely_match">Your symptoms closely match:</string>
 </resources>

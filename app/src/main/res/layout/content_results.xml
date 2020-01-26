@@ -6,26 +6,32 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".results"
-    tools:showIn="@layout/activity_results">
-
-    <ImageView
+    tools:showIn="@layout/activity_results"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/background"
-        android:scaleType="centerCrop"
-        android:id="@+id/formBack"
-        android:contentDescription="background" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fontFamily="@font/berlin_sans_fb_regular"
-        android:text="Your symptoms closely match:"
-        android:textSize="35sp"
-        android:visibility="visible" />
+        <ImageView
+            android:id="@+id/formBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
 
-
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/berlin_sans_fb_regular"
+            android:text="your_symptoms_closely_match"
+            android:textSize="35sp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="91dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

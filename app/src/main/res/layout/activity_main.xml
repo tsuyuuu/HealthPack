@@ -7,17 +7,20 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/formBack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/background"
+        android:contentDescription="/@stringBackground/"
         android:scaleType="centerCrop"
-        android:id="@+id/formBack" />
+        android:src="@drawable/background" />
+
     <ImageView
+        android:id="@+id/formTextBack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/boxes"
+        android:contentDescription="/@stringText Background/"
         android:scaleType="centerCrop"
-        android:id="@+id/formBack" />
+        android:src="@drawable/boxes" />
 
     <TextView
         android:id="@+id/textView"

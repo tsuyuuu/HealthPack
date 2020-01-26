@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,12 +15,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button continuebutton = (Button) findViewById(R.id.button3);
+        final Button continueButton = findViewById(R.id.button);
 
-        continuebutton.setOnClickListener(new View.OnClickListener() {
+        continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent( packageContext: MainActivity.this,results.class));
+                startActivity(new Intent(MainActivity.this, results.class)); //Must be fixed
             }
         });
     }}
